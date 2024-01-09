@@ -4,11 +4,12 @@
 </header>
 <div class="absolute w-full h-full bg-gray-700 ">
   <div class="mt-10 flex justify-center">
-    <div class="w-20 h-20 bg-white rounded-full flex justify-center p-6 font-bold text-2xl">0</div>
+    <div class="w-20 h-20 bg-white rounded-full flex justify-center p-6 font-bold text-2xl">{{count$|async}}</div>
   </div>
   <div class="mt-10 flex justify-center gap-10 ">
-    <button class="bg-green-700 w-28 h-8 rounded-full hover:opacity-70 font-bold">Increment</button>
-    <button class="bg-red-600 w-28 h-8 rounded-full hover:opacity-70 font-bold">Decrement</button>
-    <button class="bg-blue-500 w-28 h-8 rounded-full hover:opacity-70 font-bold">Reset</button>
+    <button (click)="increment()"
+      class="bg-green-700 w-28 h-8 rounded-full hover:opacity-70 font-bold">Increment</button>
+    <button (click)="decrement()" class="bg-red-600 w-28 h-8 rounded-full hover:opacity-70 font-bold">Decrement</button>
+    <button (click)="reset()" class="bg-blue-500 w-28 h-8 rounded-full hover:opacity-70 font-bold">Reset</button>
   </div>
 </div>
