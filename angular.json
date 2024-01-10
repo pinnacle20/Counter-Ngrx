@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "baseHref": "https://pinnacle20.github.io/counter-ngrx/",
-            "outputPath": "dist/counter-ngrx",
+            "outputPath": "dist/counter-ngrx/browser",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
