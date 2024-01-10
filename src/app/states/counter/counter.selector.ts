@@ -7,4 +7,3 @@ export const selectCount = createSelector(
   selectCounterState,
   (state) => state.count
 );
-
