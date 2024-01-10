@@ -13,7 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "baseHref": "counter-ngrx",
             "outputPath": "dist/counter-ngrx",
             "index": "src/index.html",
             "browser": "src/main.ts",
